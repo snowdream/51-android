@@ -1,0 +1,105 @@
+###################################################### 
+#  Project:  http://code.google.com/p/51-android/    #
+#  File:     /etc/udev/rules.d/51-android.rules      #
+#  Author:   snowdream <yanghui1986527@gmail.com>    #
+#  Date:     2010.06.07                              #
+######################################################
+
+#Acer
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0502", MODE="0660"
+
+#ASUS	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0b05", MODE="0660"
+
+#Dell
+SUBSYSTEM=="usb", ATTRS{idVendor}=="413", MODE="0660"
+
+#Foxconn
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0489", MODE="0660"
+
+#Fujitsu/Fujitsu Toshiba
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04c5", MODE="0660"
+
+#Garmin-Asus
+SUBSYSTEM=="usb", ATTRS{idVendor}=="091e", MODE="0660"
+	
+#Google
+SUBSYSTEM=="usb", ATTRS{idVendor}=="18d1", MODE="0660"
+
+#Hisense
+SUBSYSTEM=="usb", ATTRS{idVendor}=="109b", MODE="0660"
+
+#HTC	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0bb4", MODE="0660"
+
+#Huawei	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="12d1", MODE="0660"
+
+#K-Touch
+SUBSYSTEM=="usb", ATTRS{idVendor}=="24e3", MODE="0660"
+
+#KT Tech	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="2116", MODE="0660"
+
+#Kyocera
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0482", MODE="0660"
+
+#Lenovo
+SUBSYSTEM=="usb", ATTRS{idVendor}=="17ef", MODE="0660"
+
+#LG
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1004", MODE="0660"
+
+#Motorola
+SUBSYSTEM=="usb", ATTRS{idVendor}=="22b8", MODE="0660"
+
+#NEC	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0409", MODE="0660"
+
+#Nook
+SUBSYSTEM=="usb", ATTRS{idVendor}=="2080", MODE="0660"
+
+#Nvidia
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0955", MODE="0660"
+
+#OTGV
+SUBSYSTEM=="usb", ATTRS{idVendor}=="2257", MODE="0660"
+
+#Pantech
+SUBSYSTEM=="usb", ATTRS{idVendor}=="10a9", MODE="0660"
+
+#Pegatron
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1d4d", MODE="0660"
+
+#Philips
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0471", MODE="0660"
+
+#PMC-Sierra	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04da", MODE="0660"
+
+#Qualcomm	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="05c6", MODE="0660"
+
+#SK Telesys	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1f53", MODE="0660"
+
+#Samsung	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04e8", MODE="0660"
+
+#Sharp	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04dd", MODE="0660"
+
+#Sony	
+SUBSYSTEM=="usb", ATTRS{idVendor}=="054c", MODE="0660"
+
+#Sony Ericsson
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0fce", MODE="0660"
+
+#Teleepoch
+SUBSYSTEM=="usb", ATTRS{idVendor}=="2340", MODE="0660"
+
+#Toshiba
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0930", MODE="0660"
+
+#ZTE
+SUBSYSTEM=="usb", ATTRS{idVendor}=="19d2", MODE="0660"
