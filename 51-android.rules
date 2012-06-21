@@ -14,7 +14,7 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="0b05", MODE="0660", OWNER="snowdream"
 
 
 #Dell
-SUBSYSTEM=="usb", ATTRS{idVendor}=="413", MODE="0660", OWNER="snowdream"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="413c", MODE="0660", OWNER="snowdream"
 
 
 #Foxconn
@@ -38,9 +38,6 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="109b", MODE="0660", OWNER="snowdream"
 
 #HTC	
 SUBSYSTEM=="usb", ATTRS{idVendor}=="0bb4", MODE="0660", OWNER="snowdream"
-
-#HTC HERO
-
 
 #Huawei	
 SUBSYSTEM=="usb", ATTRS{idVendor}=="12d1", MODE="0660", OWNER="snowdream"
