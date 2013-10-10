@@ -25,6 +25,9 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="091e", MODE="0660", GROUP="plugdev"
 	
 #Google
 SUBSYSTEM=="usb", ATTRS{idVendor}=="18d1", MODE="0660", GROUP="plugdev" 
+	
+#Haier
+SUBSYSTEM=="usb", ATTRS{idVendor}=="201E", MODE="0660", GROUP="plugdev" 
 
 #Hisense
 SUBSYSTEM=="usb", ATTRS{idVendor}=="109b", MODE="0660", GROUP="plugdev" 
