@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>51-android by snowdream</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/snowdream/51-android">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/snowdream/51-android/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/snowdream/51-android/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>51-android</h1>
+          <p>Setting up an android Device for Development</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/snowdream">snowdream</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="51-android" class="anchor" href="#51-android"><span class="octicon octicon-link"></span></a>51-android</h1>
+
+<h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>If you're developing on Ubuntu Linux, you need to add a udev rules file that contains a USB configuration for each type of device you want to use for development. In the rules file, each device manufacturer is identified by a unique vendor ID, as specified by the ATTR{idVendor} property. </p>
+
+<p>For more infomation,please visit<br><a href="http://developer.android.com/tools/device.html">http://developer.android.com/tools/device.html</a>.</p>
+
+<h2>
+<a name="system-requirements" class="anchor" href="#system-requirements"><span class="octicon octicon-link"></span></a>System requirements</h2>
+
+<p>Ubuntu,Fedora or other linux systems.</p>
+
+<h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<p>1.Copy the file "51-android.rules" to "<strong>/etc/udev/rules.d/51-android.rules</strong>".To Achieve it，You should be sure that you have the <strong>root</strong> permission.</p>
+
+<p>2.Now open the console,and execute:</p>
+
+<div class="highlight highlight-bash"><pre>sudo chmod a+r /etc/udev/rules.d/51-android.rules
+</pre></div>
+
+<p>3.Then execute：</p>
+
+<div class="highlight highlight-bash"><pre>sudo service udev restart
+</pre></div>
+
+<p>4.When plugged in over USB, can verify that your device is connected by executing <code>adb devices</code> from your SDK platform-tools/ directory. If connected, you'll see the device name listed as a "device."</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<pre><code> Copyright (C) 2013 Snowdream Mobile
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+</code></pre>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
