@@ -48,7 +48,7 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="2116", MODE="0660", GROUP="plugdev"
 SUBSYSTEM=="usb", ATTRS{idVendor}=="0482", MODE="0660", GROUP="plugdev" 
 
 #Lenovo
-SUBSYSTEM=="usb", ATTRS{idVendor}=="2006", MODE="0660", GROUP="plugdev" 
+SUBSYSTEM=="usb", ATTRS{idVendor}=="17ef", MODE="0660", GROUP="plugdev" 
 
 #LG
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1004", MODE="0660", GROUP="plugdev" 
