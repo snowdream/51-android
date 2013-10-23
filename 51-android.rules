@@ -56,9 +56,6 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="1004", MODE="0660", GROUP="plugdev"
 #Motorola
 SUBSYSTEM=="usb", ATTRS{idVendor}=="22b8", MODE="0660", GROUP="plugdev" 
 
-#Motorola
-SUBSYSTEM=="usb", ATTRS{idVendor}=="22b8", MODE="0660", GROUP="plugdev" 
-
 #MTK	
 SUBSYSTEM=="usb", ATTRS{idVendor}=="0e8d", MODE="0660", GROUP="plugdev" 
 
