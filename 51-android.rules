@@ -8192,6 +8192,9 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="1f48", MODE="0660", GROUP="plugdev"
 #G-Tek Electronics Group 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1f4d", MODE="0660", GROUP="plugdev"
 
+#SK Telesys
+SUBSYSTEM=="usb", ATTR{idVendor}=="1f53", MODE="0660", GROUP="plugdev"
+
 #Aliph 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1f6f", MODE="0660", GROUP="plugdev"
 
@@ -8246,6 +8249,9 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="2013", MODE="0660", GROUP="plugdev"
 #PLANEX 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2019", MODE="0660", GROUP="plugdev"
 
+#Haier
+SUBSYSTEM=="usb", ATTR{idVendor}=="201e", MODE="0660", GROUP="plugdev"
+
 #Hauppauge 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2040", MODE="0660", GROUP="plugdev"
 
@@ -8279,6 +8285,9 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="20f4", MODE="0660", GROUP="plugdev"
 #ActionStar 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2101", MODE="0660", GROUP="plugdev"
 
+#KT Tech
+SUBSYSTEM=="usb", ATTR{idVendor}=="2116", MODE="0660", GROUP="plugdev"
+
 #Advanced Silicon S.A. 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2149", MODE="0660", GROUP="plugdev"
 
@@ -8294,6 +8303,9 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="21a1", MODE="0660", GROUP="plugdev"
 #Agecodagis SARL 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="21d6", MODE="0660", GROUP="plugdev"
 
+# Fuzhou Rockchip Electronics
+SUBSYSTEM=="usb", ATTR{idVendor}=="2207", MODE="0666", GROUP="plugdev"
+
 #MacAlly 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2222", MODE="0660", GROUP="plugdev"
 
@@ -8308,6 +8320,12 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="2233", MODE="0660", GROUP="plugdev"
 
 #Kobo Inc. 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2237", MODE="0660", GROUP="plugdev"
+
+#OTGV
+SUBSYSTEM=="usb", ATTR{idVendor}=="2257", MODE="0660", GROUP="plugdev"
+
+#Oppo, Find 5
+SUBSYSTEM=="usb", ATTR{idVendor}=="2257", MODE="0660", GROUP="plugdev"
 
 #8D Technologies inc. 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="228d", MODE="0660", GROUP="plugdev"
@@ -8330,6 +8348,9 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="2304", MODE="0660", GROUP="plugdev"
 #Shining Technologies, Inc. [hex] 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2318", MODE="0660", GROUP="plugdev"
 
+#Teleepoch
+SUBSYSTEM=="usb", ATTR{idVendor}=="2340", MODE="0660", GROUP="plugdev"
+
 #Arduino SA 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2341", MODE="0660", GROUP="plugdev"
 
@@ -8348,6 +8369,9 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="2443", MODE="0660", GROUP="plugdev"
 #Tripp-Lite 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2478", MODE="0660", GROUP="plugdev"
 
+#K-Touch
+SUBSYSTEM=="usb", ATTR{idVendor}=="24e3", MODE="0660", GROUP="plugdev"
+
 #TwinMOS 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2632", MODE="0660", GROUP="plugdev"
 
@@ -8356,6 +8380,9 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="2650", MODE="0660", GROUP="plugdev"
 
 #Sundtek 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2659", MODE="0660", GROUP="plugdev"
+
+#XiaoMi
+SUBSYSTEM=="usb", ATTR{idVendor}=="2717", MODE="0660", GROUP="plugdev"
 
 #Citizen 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="2730", MODE="0660", GROUP="plugdev"
@@ -8635,33 +8662,3 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="f003", MODE="0660", GROUP="plugdev"
 
 #Atten Electronics / Siglent Technologies 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="f4ec", MODE="0660", GROUP="plugdev"
-
-#Teleepoch
-SUBSYSTEM=="usb", ATTR{idVendor}=="2340", MODE="0660", GROUP="plugdev"
-
-#Mi2A
-SUBSYSTEM=="usb", ATTR{idVendor}=="2717", MODE="0660", GROUP="plugdev"
-
-#ZTE, Blade, Blade S (Crescent, Orange San Francisco 2)
-SUBSYSTEM=="usb", ATTR{idVendor}=="19d2", MODE="0660", GROUP="plugdev"
-
-#SK Telesys
-SUBSYSTEM=="usb", ATTR{idVendor}=="1f53", MODE="0660", GROUP="plugdev"
-
-#OTGV
-SUBSYSTEM=="usb", ATTR{idVendor}=="2257", MODE="0660", GROUP="plugdev"
-
-#Oppo, Find 5
-SUBSYSTEM=="usb", ATTR{idVendor}=="2257", MODE="0660", GROUP="plugdev"
-
-#KT Tech
-SUBSYSTEM=="usb", ATTR{idVendor}=="2116", MODE="0660", GROUP="plugdev"
-
-#K-Touch
-SUBSYSTEM=="usb", ATTR{idVendor}=="24e3", MODE="0660", GROUP="plugdev"
-
-#Haier
-SUBSYSTEM=="usb", ATTR{idVendor}=="201e", MODE="0660", GROUP="plugdev"
-
-# Fuzhou Rockchip Electronics
-SUBSYSTEM=="usb", ATTR{idVendor}=="2207", MODE="0666", GROUP="plugdev"
