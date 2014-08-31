@@ -11,7 +11,9 @@ Ubuntu,Fedora or other linux systems.
 
 ##Install  
 1.Copy the file "51-android.rules" to "**/etc/udev/rules.d/51-android.rules**".To Achieve it，You should be sure that you have the **root** permission.
-
+```bash
+sudo curl --create-dirs -L -o /etc/udev/rules.d/51-android.rules -O -L https://raw.githubusercontent.com/snowdream/51-android/master/51-android.rules
+```
 2.Now open the console,and execute:
 ```bash
 sudo chmod a+r /etc/udev/rules.d/51-android.rules
