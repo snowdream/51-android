@@ -8662,3 +8662,7 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="f003", MODE="0660", GROUP="plugdev"
 
 #Atten Electronics / Siglent Technologies 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="f4ec", MODE="0660", GROUP="plugdev"
+
+#Lenovo
+SUBSYSTEM=="usb", ATTRS{idVendor}=="17ef", MODE="0660", GROUP="plugdev"
+
