@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="helloworld" basedir="." default="fedora">
+
+ <property name="src.dir" value="."></property>
+ <property name="dest.name" value="51-android.fedora.rules"></property>
+
+ <target name="clean" >
+ 	<delete>
+ 		<fileset dir="${src.dir}" >
+			<include name="${dest.name}" />
+		</fileset>
+ 	</delete>
+ </target>
+
+<target name="fedora" description="Generate 51-android.rules for fedora, centos and redhat">
+	<copy todir="${src.dir}" filtering="true">
+		<fileset dir="${src.dir}" >
+			<include name="51-android.rules" />
+		</fileset>
+
+		<filterset begintoken="MODE" endtoken="&quot;plugdev&quot;">
+			<filter token="=&quot;0660&quot;, GROUP=" value="TAG+=&quot;systemd&quot;, ENV{SYSTEMD_WANTS}=&quot;adb.service&quot;"/>
+		</filterset>
+		<filterset begintoken="ATTR" endtoken="{idVendor}">
+			<filter token="S" value="ATTR{idVendor}"/>
+		</filterset>
+		<globmapper from="51-android.rules" to="${dest.name}"/>
+	</copy>
+</target>
+
+
+</project>
