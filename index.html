@@ -1,80 +1,59 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>51-android by snowdream</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/snowdream/51-android">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/snowdream/51-android/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/snowdream/51-android/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+    <section class="page-header">
+      <h1 class="project-name">51-android</h1>
+      <h2 class="project-tagline">Setting up an android Device for Development</h2>
+      <a href="https://github.com/snowdream/51-android" class="btn">View on GitHub</a>
+      <a href="https://github.com/snowdream/51-android/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/snowdream/51-android/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>51-android</h1>
-          <p>Setting up an android Device for Development</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/snowdream">snowdream</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
-        <h1>
-<a name="51-android" class="anchor" href="#51-android"><span class="octicon octicon-link"></span></a>51-android</h1>
+    <section class="main-content">
+      <h1>
+<a id="51-android" class="anchor" href="#51-android" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>51-android</h1>
 
 <h2>
-<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
 
 <p>If you're developing on Ubuntu Linux, you need to add a udev rules file that contains a USB configuration for each type of device you want to use for development. In the rules file, each device manufacturer is identified by a unique vendor ID, as specified by the ATTR{idVendor} property. </p>
 
-<p>For more infomation,please visit<br><a href="http://developer.android.com/tools/device.html">http://developer.android.com/tools/device.html</a>.<br><a href="http://www.linux-usb.org/usb.ids">http://www.linux-usb.org/usb.ids</a></p>
+<p>For more infomation,please visit<br>     <a href="http://developer.android.com/tools/device.html">http://developer.android.com/tools/device.html</a>.<br>
+<a href="http://www.linux-usb.org/usb.ids">http://www.linux-usb.org/usb.ids</a></p>
 
 <h2>
-<a name="system-requirements" class="anchor" href="#system-requirements"><span class="octicon octicon-link"></span></a>System requirements</h2>
+<a id="system-requirements" class="anchor" href="#system-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>System requirements</h2>
 
 <p>Ubuntu,Fedora or other linux systems.</p>
 
 <h2>
-<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
 
 <p>1.Open the console to copy the file "51-android.rules" to "<strong>/etc/udev/rules.d/51-android.rules</strong>" by executing the command below. To Achieve it，you should be sure that you have the <strong>root</strong> permission.</p>
 
-<div class="highlight highlight-bash"><pre>sudo curl --create-dirs -L -o /etc/udev/rules.d/51-android.rules -O -L https://raw.githubusercontent.com/snowdream/51-android/master/51-android.rules
-</pre></div>
+<div class="highlight highlight-source-shell"><pre>sudo curl --create-dirs -L -o /etc/udev/rules.d/51-android.rules -O -L https://raw.githubusercontent.com/snowdream/51-android/master/51-android.rules</pre></div>
 
 <p>2.To give it appropriate permissions next execute the command:</p>
 
-<div class="highlight highlight-bash"><pre>sudo chmod a+r /etc/udev/rules.d/51-android.rules
-</pre></div>
+<div class="highlight highlight-source-shell"><pre>sudo chmod a+r /etc/udev/rules.d/51-android.rules</pre></div>
 
 <p>3.Then execute：</p>
 
-<div class="highlight highlight-bash"><pre>sudo service udev restart
-</pre></div>
+<div class="highlight highlight-source-shell"><pre>sudo service udev restart</pre></div>
 
 <p>4.When plugged in over USB, can verify that your device is connected by executing <code>adb devices</code> from your SDK platform-tools/ directory. If connected, you'll see the device name listed as a "device."</p>
 
 <h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
 <pre><code>Copyright (C) 2014 Snowdream Mobile &lt;yanghui1986527@gmail.com&gt;
 
@@ -90,10 +69,15 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 </code></pre>
-      </section>
 
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/snowdream/51-android">51-android</a> is maintained by <a href="https://github.com/snowdream">snowdream</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
   </body>
 </html>
