@@ -8392,6 +8392,9 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="2821", TAG+="systemd", ENV{SYSTEMD_WANTS}="ad
 #Toptronic Industrial Co., Ltd 
 SUBSYSTEM=="usb", ATTR{idVendor}=="2899", TAG+="systemd", ENV{SYSTEMD_WANTS}="adb.service"
 
+#Meizu Telecom Equipment Co., Ltd. 
+SUBSYSTEM=="usb", ATTR{idVendor}=="2a45", TAG+="systemd", ENV{SYSTEMD_WANTS}="adb.service"
+
 #Planex Communications 
 SUBSYSTEM=="usb", ATTR{idVendor}=="2c02", TAG+="systemd", ENV{SYSTEMD_WANTS}="adb.service"
 

@@ -8392,6 +8392,9 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="2821", MODE="0666", GROUP="plugdev"
 #Toptronic Industrial Co., Ltd 
 SUBSYSTEM=="usb", ATTR{idVendor}=="2899", MODE="0666", GROUP="plugdev"
 
+#Meizu Telecom Equipment Co., Ltd.
+SUBSYSTEM=="usb", ATTR{idVendor}=="2a45", MODE="0666", GROUP="plugdev"
+
 #Planex Communications 
 SUBSYSTEM=="usb", ATTR{idVendor}=="2c02", MODE="0666", GROUP="plugdev"
 
