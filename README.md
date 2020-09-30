@@ -1,6 +1,6 @@
-# 51-android
+# 51-Android
 
-## Introduction
+## Introduction 
 
 If you're developing on Ubuntu Linux, you need to add a udev rules file that contains a USB configuration for each type of device you want to use for development. In the rules file, each device manufacturer is identified by a unique vendor ID, as specified by the ATTR{idVendor} property. 
   
