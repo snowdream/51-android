@@ -15,7 +15,7 @@ Ubuntu,Fedora or other linux systems.
 1. Open the console to copy the file "51-android.rules" to "**/etc/udev/rules.d/51-android.rules**" by executing the command below. To Achieve it，you should be sure that you have the **root** permission.
 
 ```bash
-sudo curl --create-dirs -L -o /etc/udev/rules.d/51-android.rules -O -L https://raw.githubusercontent.com/snowdream/51-android/master/51-android.rules
+sudo curl --create-dirs -L -o /etc/udev/rules.d/51-android.rules https://raw.githubusercontent.com/snowdream/51-android/master/51-android.rules
 ```
 
 2. To give it appropriate permissions next execute the command:
