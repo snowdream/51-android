@@ -8658,3 +8658,6 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="f003", MODE="0666", GROUP="plugdev"
 
 #Atten Electronics / Siglent Technologies 
 SUBSYSTEM=="usb", ATTR{idVendor}=="f4ec", MODE="0666", GROUP="plugdev"
+
+#Oneplus
+SUBSYSTEM=="usb", ATTR{idVendor}=="2a70", MODE="0666", GROUP="plugdev"
