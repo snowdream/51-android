@@ -8661,3 +8661,9 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="f4ec", MODE="0666", GROUP="plugdev"
 
 #Oneplus
 SUBSYSTEM=="usb", ATTR{idVendor}=="2a70", MODE="0666", GROUP="plugdev"
+
+# Essential Products
+SUBSYSTEM=="usb", ATTR{idVendor}=="2e17", MODE="0666", GROUP="plugdev"
+
+#Nextbit
+SUBSYSTEM=="usb", ATTR{idVendor}=="2c3f", MODE="0666", GROUP="plugdev"
